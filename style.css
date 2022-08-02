@@ -10,7 +10,7 @@ body{
     grid-template-columns: 20vw 1fr;
     grid-template-rows: 150px 3fr;
     font-family: monospace;
-    background: black;
+    background: firebrick;
     gap:2px;
 }
 
@@ -34,7 +34,7 @@ body{
 }
 .sidebar li{
     list-style-type: none;
-    margin-bottom: 15px ;
+    margin-bottom: 15px;
 }
 .sidebar p{
     font-size: 1.5rem;
@@ -44,6 +44,7 @@ body{
     cursor: pointer;
 }
 .sidebar ul li:hover{
+    transition: 200ms;
     color:firebrick;
     transform: scale(1.03);
     cursor: pointer;
@@ -78,6 +79,7 @@ body{
 }
 .header .header-top .bell-icon{
     margin-right: 10px;
+    cursor: pointer;
 }
 .header .header-top .name{
     font-size: 16px;
@@ -96,8 +98,10 @@ body{
     margin-right: 105px;
     box-shadow: none;
     border: none;
-    background-color: rgb(206, 219, 235);
+    background-color: maroon;
+    color:white;
 }
+
 /* Header Bottom */
 .header .header-bottom{
     display: flex;
@@ -125,13 +129,46 @@ body{
     padding: 6px;
     width:85px;
     height:32px;
+    margin-left:3px;
     text-align: center;
     border-radius: 16px;
+    transition: 300ms;
 }
+.header .header-bottom .btns button:hover{
+    background-color: firebrick;
+    cursor: pointer;
+    color:white;
+    transform: scale(1.03);
+}
+
 
 /* Main-Content Styling */
 .main-content{
-    background-color: rgb(179, 193, 208);
+    /* background-color: rgb(179, 193, 208); */
+    background-color: rgb(34, 31, 48);
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+    padding: 15px;
+}
+
+.main-content .main-left{
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+.main-content .main-left .project{
+    color: white;
+}
+.main-content .main-left .cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px
+}
+.main-content .main-left .cards .card{
+    background-color: rgb(24, 21, 42);
+    border-radius: 8px;
+    border-left: 8px firebrick solid;
+    box-shadow: 1px 3px black;
 }
