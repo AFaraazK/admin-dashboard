@@ -13,6 +13,9 @@ body{
     background: firebrick;
     gap:2px;
 }
+img{
+   cursor: pointer; 
+}
 
 /* Sidebar Styling */
 .sidebar{
@@ -92,7 +95,7 @@ body{
     margin: 0 10px;
 }
 .header .header-top .search{
-    width:550px;
+    width:40vw;
     border-radius: 20px;
     padding-left: 10px;
     margin-right: 105px;
@@ -209,6 +212,8 @@ hr{
     padding: 20px;
     height: 220px;
     color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .main-content .main-right .cardR p{
     opacity: 60%;
@@ -233,4 +238,18 @@ hr{
 }
 .trendingRow{
     display: flex;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .selections-one, .selections-two{
+        display: none;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-content .main-left .cards{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
