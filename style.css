@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+    display: grid;
+    height:100vh;
+    width: 100vw;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 150px 3fr;
+    font-family: monospace;
+}
+
+/* Sidebar Styling */
+.sidebar{
+    background-color: steelblue;
+    grid-column: 1;
+    grid-row: 1/3;
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 30px 200px 250px;
+    column-gap: 12px;
+    row-gap: 48px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.sidebar ul{
+    line-height: 1;
+}
+.sidebar li{
+    list-style-type: none;
+    margin-bottom: 15px ;
+}
+.sidebar p{
+    font-size: 1.5rem;
+}
+.sidebar
+
+
+/* Header Styling */
+.header{
+    color:white;
+    grid-column: 2/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+/* Header Top */
+.header .header-top img{
+    width:35px;
+    border-radius: 50%;
+}
+.header .header-top{
+    padding-top:20px;
+    display: flex;
+}
+.header .header-top .icon{
+    align-self: center;
+    font-size: 18px;
+}
+.header .header-top .search-icon{
+    margin-left: 45px;
+    margin-right: 20px;
+}
+.header .header-top .bell-icon{
+    margin-right: 10px;
+}
+.header .header-top .name{
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    margin-left:15px;
+    margin-right:10px;
+}
+.header .header-top .profile{
+    margin: 0 10px;
+}
+.header .header-top .search{
+    width:550px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-right: 105px;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(206, 219, 235);
+}
+/* Header Bottom */
+.header .header-bottom img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Main-Content Styling */
+.main-content{
+    background-color: rgb(179, 193, 208);
+    grid-column: 2;
+    grid-row: 2;
+}
