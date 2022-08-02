@@ -98,7 +98,7 @@ img{
     width:40vw;
     border-radius: 20px;
     padding-left: 10px;
-    margin-right: 105px;
+    margin-right: 10vw;
     box-shadow: none;
     border: none;
     background-color: maroon;
@@ -241,7 +241,13 @@ hr{
     cursor: pointer;
 }
 
-@media (max-width: 700px){
+
+@media (max-width:801px){
+    .header .header-bottom{
+        margin:10px;
+    }
+}
+@media (max-width: 768px){
     .selections-one, .selections-two{
         display: none;
     }
@@ -251,5 +257,20 @@ hr{
     }
     .main-content .main-left .cards{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .dashboard-text{
+        display: none;
+    }
+    .sidebar{
+        grid-template-columns: 1fr;
+    }
+    .header .header-bottom .btns button{
+        width: auto;
+    }
+    .header .header-bottom .nameBig{
+        width:150px;
+    }
+    .header .header-bottom .btns{
+        margin-left: 0;
     }
 }
