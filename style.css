@@ -170,5 +170,27 @@ body{
     background-color: rgb(24, 21, 42);
     border-radius: 8px;
     border-left: 8px firebrick solid;
-    box-shadow: 1px 3px black;
+    box-shadow: 2px 3px black;
+    height: 150px;
+}
+.main-content .main-left .cards .card:hover{
+    transform: scale(1.01);
+    transition: 200ms;
+}
+
+.main-content .main-right{
+    padding:0 20px;
+    display:grid;
+    grid-template-rows: 30px 1fr 30px 1fr;
+}
+.announcements, .trending{
+    align-self: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.main-content .main-right .cardR{
+    margin-bottom:5px;
+    background-color:rgb(24, 21, 42);;
+    border-radius: 8px;
+    box-shadow: 3px 3px black;
 }
