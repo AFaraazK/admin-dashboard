@@ -10,11 +10,13 @@ body{
     grid-template-columns: 20vw 1fr;
     grid-template-rows: 150px 3fr;
     font-family: monospace;
+    background: black;
+    gap:2px;
 }
 
 /* Sidebar Styling */
 .sidebar{
-    background-color: steelblue;
+    background-color: rgb(23, 18, 42);
     grid-column: 1;
     grid-row: 1/3;
     padding:20px;
@@ -37,11 +39,19 @@ body{
 .sidebar p{
     font-size: 1.5rem;
 }
-.sidebar
-
+.dashboard-logo:hover, .dashboard-text:hover{
+    color:firebrick;
+    cursor: pointer;
+}
+.sidebar ul li:hover{
+    color:firebrick;
+    transform: scale(1.03);
+    cursor: pointer;
+}
 
 /* Header Styling */
 .header{
+    background-color: rgb(23, 18, 42);
     color:white;
     grid-column: 2/3;
     grid-row: 1;
@@ -89,9 +99,34 @@ body{
     background-color: rgb(206, 219, 235);
 }
 /* Header Bottom */
+.header .header-bottom{
+    display: flex;
+    margin:15px;
+    margin-top: 25px;
+    align-items: center;
+}
 .header .header-bottom img{
-    width: 50px;
+    width: 55px;
     border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.header .header-bottom .btns{
+    padding-top: 8px;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+.header .header-bottom .btns button{
+    background-color: maroon;
+    color:white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 6px;
+    width:85px;
+    height:32px;
+    text-align: center;
+    border-radius: 16px;
 }
 
 /* Main-Content Styling */
